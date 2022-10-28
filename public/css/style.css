@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.body{
+    background-color: #181818;
+}
+.container{
+    height: 94vh;
+    width: 100%;
+    display: flex;
+    background-color: #181818;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 80%;
+    height: 80vh;
+    background-color: #8758FF;
+    box-shadow: 4px 4px 20px 2px #4f4f4f;
+    border-radius: 25px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.header{
+    width: 100%;
+    background-color: #3c3c3c;
+    color: rgb(185, 185, 185);
+    text-align: center;
+    font-size: 30px;
+    padding: 16px;
+}
+
+.button{
+    background-color: #5CB8E4;
+    height: 50px;
+    width: 10%;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    left: 50%;
+}
+
+.button:hover{
+    transition: .5s ease-in-out ;
+    background-color: #85d3f7;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.msg{
+    width: 100%;
+    height: 70%;
+    background-color: #d9d8d834;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding: 16px;
+    outline: none;
+}
+
+::placeholder{
+    color: rgb(77, 77, 77);
+}
+
+/* For Message Page */
+
+
+.message{
+    width: 100%;
+    height: 100%;
+    background-color: #d9d8d834;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding: 25px;
+    outline: none;
+}
+
+/* For error Page */
+
+.error{
+    font-size: 70px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.url{
+    padding: 10px;
+    background-color: #d8393934;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.url p{
+    text-align: center;
+}
+
+.copy__btn{
+    background-color: #5CB8E4;
+    height: 90%;
+    width: 8%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.copy__btn:hover{
+    transition: .5s ease-in-out ;
+    background-color: #85d3f7;
+}

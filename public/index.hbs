@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+</head>
+<body>
+    <div class="header">
+            
+        Welcome to one-time message
+        
+    </div>
+    <div class="container">
+        
+        <div class="content">
+            <form method="post">
+                <textarea class="msg" type="text" name="form_data" id="" aria-label="123" required placeholder="Enter your message here"></textarea>
+                <br>
+                <input class="button" type="submit" value="Submit">
+            </form>
+
+            {{#if key}}
+            <div class="url">
+                URL: <p>http://localhost:3000/{{key}}</p>
+                <button class="copy__btn" onclick="copy()">Copy</button>
+            </div>
+            {{/if}} 
+       
+            
+        </div>
+        
+    </div>
+
+    
+    <script>
+        function copy() {
+            var copyText = document.querySelector(".url p");
+            navigator.clipboard.writeText(copyText.innerText);
+            alert("Copied the link: " + copyText.innerText);
+        }
+    </script>
+
+</body>
+</html>
